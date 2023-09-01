@@ -1,7 +1,8 @@
 function getFormvalue() {
     //Write your code here
-    event.preventDefault(); // prevent form from submitting
-        const firstName = document.getElementById("firstName").value;
-        const lastName = document.getElementById("lastName").value;
-        alert(`First Name: ${firstName}\nLast Name: ${lastName}`);
+	let first =document.querySelector('#form1 input[name="fname"]');
+	let last =document.querySelector('#form1 input[name="lname"]');
+	let fname=first.value;
+	let lname=last.value;
+	alert(fname+" "+lname);
 }
